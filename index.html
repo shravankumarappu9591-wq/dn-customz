@@ -1,0 +1,2752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DN CUSTOMZ | Bike Accessories</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    color:#171717;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#080808;
+    color:white;
+    box-shadow:0 3px 15px rgba(0,0,0,.3);
+}
+
+.navbar{
+    max-width:1250px;
+    margin:auto;
+    min-height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 20px;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.logo span{
+    color:#e50914;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.nav-links a:hover{
+    color:#e50914;
+}
+
+.nav-icons{
+    display:flex;
+    gap:12px;
+}
+
+.icon-btn{
+    position:relative;
+    background:#181818;
+    color:white;
+    border:1px solid #333;
+    width:42px;
+    height:42px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:19px;
+}
+
+.badge{
+    position:absolute;
+    top:-6px;
+    right:-6px;
+    background:#e50914;
+    color:white;
+    font-size:11px;
+    min-width:19px;
+    height:19px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.menu-btn{
+    display:none;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:570px;
+    background:
+    linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.35)),
+    url("https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpkMWEyZDY1MGM4Nzg0OTAxOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAyZjgyMjMwMzM2ODowMDA2NWM3NjliY2U2ZDlmEAIYASIKaW1hZ2UvanBlZw==")
+    center/cover;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:1250px;
+    width:100%;
+    margin:auto;
+    padding:40px 25px;
+    color:white;
+}
+
+.hero h1{
+    font-size:65px;
+    max-width:700px;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#e50914;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:600px;
+    color:#ddd;
+    margin-bottom:30px;
+}
+
+.btn{
+    border:none;
+    padding:13px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-red{
+    background:#e50914;
+    color:white;
+}
+
+.btn-dark{
+    background:#111;
+    color:white;
+}
+
+.btn-light{
+    background:white;
+    color:#111;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+/* ================= SECTIONS ================= */
+
+.section{
+    max-width:1250px;
+    margin:auto;
+    padding:65px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:#777;
+    margin-bottom:35px;
+}
+
+/* ================= CATEGORIES ================= */
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.category{
+    background:#111;
+    color:white;
+    padding:30px 15px;
+    border-radius:15px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.category:hover{
+    transform:translateY(-7px);
+    background:#e50914;
+}
+
+.category .emoji{
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+/* ================= SHOP CONTROLS ================= */
+
+.shop-controls{
+    background:white;
+    padding:18px;
+    border-radius:15px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.search-box{
+    flex:1;
+    min-width:220px;
+}
+
+.search-box input,
+.shop-controls select{
+    width:100%;
+    padding:13px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+.shop-controls select{
+    width:180px;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.product{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    position:relative;
+}
+
+.product:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.product-img{
+    height:210px;
+    position:relative;
+    overflow:hidden;
+    background:#eee;
+}
+
+.product-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.product:hover img{
+    transform:scale(1.06);
+}
+
+.wishlist{
+    position:absolute;
+    right:10px;
+    top:10px;
+    width:38px;
+    height:38px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    cursor:pointer;
+    font-size:19px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.wishlist.active{
+    color:#e50914;
+}
+
+.product-info{
+    padding:16px;
+}
+
+.category-name{
+    color:#e50914;
+    font-size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.product h3{
+    margin:6px 0;
+    font-size:18px;
+}
+
+.rating{
+    color:#ffb400;
+    font-size:14px;
+    margin:7px 0;
+}
+
+.price{
+    font-size:21px;
+    font-weight:bold;
+}
+
+.old-price{
+    color:#999;
+    text-decoration:line-through;
+    font-size:13px;
+    margin-left:5px;
+}
+
+.discount{
+    color:#148a2a;
+    font-size:12px;
+    margin-left:5px;
+}
+
+.product-actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:7px;
+    margin-top:13px;
+}
+
+.product-actions button{
+    padding:10px 5px;
+    border-radius:7px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:12px;
+}
+
+.add-cart{
+    background:#111;
+    color:white;
+}
+
+.buy-now{
+    background:#e50914;
+    color:white;
+}
+
+.details-btn{
+    grid-column:1/3;
+    background:#eee;
+    color:#111;
+}
+
+/* ================= CART ================= */
+
+.cart-panel{
+    position:fixed;
+    right:-450px;
+    top:0;
+    width:420px;
+    max-width:95%;
+    height:100vh;
+    background:white;
+    z-index:2000;
+    transition:.35s;
+    box-shadow:-10px 0 30px rgba(0,0,0,.25);
+    display:flex;
+    flex-direction:column;
+}
+
+.cart-panel.open{
+    right:0;
+}
+
+.cart-header{
+    padding:20px;
+    background:#090909;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.close{
+    background:none;
+    border:none;
+    color:white;
+    font-size:25px;
+    cursor:pointer;
+}
+
+.cart-items{
+    flex:1;
+    overflow:auto;
+    padding:15px;
+}
+
+.cart-item{
+    display:flex;
+    gap:10px;
+    border-bottom:1px solid #eee;
+    padding:12px 0;
+}
+
+.cart-item img{
+    width:75px;
+    height:75px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.cart-item-info{
+    flex:1;
+}
+
+.cart-item-info h4{
+    font-size:14px;
+}
+
+.quantity{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top:7px;
+}
+
+.quantity button{
+    border:none;
+    background:#eee;
+    width:25px;
+    height:25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.remove{
+    color:#e50914;
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:12px;
+}
+
+.cart-footer{
+    padding:20px;
+    border-top:1px solid #ddd;
+}
+
+.total-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:9px;
+}
+
+.grand-total{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.full-btn{
+    width:100%;
+    margin-top:10px;
+}
+
+/* ================= MODAL ================= */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    z-index:3000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal.show{
+    display:flex;
+}
+
+.modal-box{
+    background:white;
+    width:850px;
+    max-width:100%;
+    max-height:90vh;
+    overflow:auto;
+    border-radius:18px;
+    position:relative;
+    padding:25px;
+}
+
+.modal-close{
+    position:absolute;
+    right:18px;
+    top:12px;
+    border:none;
+    background:#111;
+    color:white;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.details-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.details-grid img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.details-info h2{
+    font-size:30px;
+    margin:10px 0;
+}
+
+.details-info p{
+    color:#666;
+    line-height:1.6;
+}
+
+.specs{
+    margin:15px 0;
+}
+
+.specs li{
+    margin:7px 0;
+}
+
+/* ================= REVIEW ================= */
+
+.review-box{
+    margin-top:30px;
+    padding-top:20px;
+    border-top:1px solid #ddd;
+}
+
+.stars{
+    display:flex;
+    gap:5px;
+    margin:10px 0;
+}
+
+.star{
+    font-size:30px;
+    color:#ccc;
+    cursor:pointer;
+}
+
+.star.selected{
+    color:#ffb400;
+}
+
+.review-box textarea{
+    width:100%;
+    height:80px;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    resize:none;
+}
+
+.reviews-list{
+    margin-top:15px;
+}
+
+.review{
+    padding:10px;
+    background:#f7f7f7;
+    margin-bottom:8px;
+    border-radius:8px;
+}
+
+/* ================= CHECKOUT ================= */
+
+.checkout{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    z-index:4000;
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+}
+
+.checkout.show{
+    display:flex;
+}
+
+.checkout-box{
+    width:700px;
+    max-width:100%;
+    max-height:92vh;
+    overflow:auto;
+    background:white;
+    border-radius:18px;
+    padding:25px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.form-group{
+    margin-bottom:12px;
+}
+
+.form-group.full{
+    grid-column:1/3;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.payment{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin:15px 0;
+}
+
+.payment label{
+    border:1px solid #ddd;
+    padding:10px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.success{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.success-icon{
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-card{
+    background:#111;
+    color:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+.contact-card h2{
+    margin-bottom:20px;
+}
+
+.contact-detail{
+    margin:18px 0;
+    font-size:17px;
+}
+
+.contact-detail span{
+    color:#e50914;
+    font-weight:bold;
+}
+
+.contact-form{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    margin-bottom:12px;
+    padding:13px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.contact-form textarea{
+    height:130px;
+    resize:none;
+}
+
+/* ================= TOAST ================= */
+
+.toast{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#111;
+    color:white;
+    padding:14px 20px;
+    border-radius:9px;
+    z-index:5000;
+    transform:translateY(100px);
+    opacity:0;
+    transition:.3s;
+}
+
+.toast.show{
+    transform:translateY(0);
+    opacity:1;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#080808;
+    color:white;
+    padding:45px 20px 20px;
+}
+
+.footer-grid{
+    max-width:1250px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:30px;
+}
+
+footer h2{
+    margin-bottom:12px;
+}
+
+footer h2 span{
+    color:#e50914;
+}
+
+footer p,
+footer li{
+    color:#aaa;
+    margin:8px 0;
+    list-style:none;
+}
+
+footer a{
+    color:#aaa;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:white;
+}
+
+.copyright{
+    text-align:center;
+    border-top:1px solid #222;
+    margin-top:30px;
+    padding-top:20px;
+    color:#777;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+    .products{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .categories{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:750px){
+
+    .nav-links{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#080808;
+        display:none;
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .details-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-group.full{
+        grid-column:1;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:500px){
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .categories{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .hero{
+        min-height:500px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .shop-controls select{
+        width:100%;
+    }
+
+    .product-img{
+        height:250px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+<nav class="navbar">
+
+<div class="logo">DN <span>CUSTOMZ</span></div>
+
+<ul class="nav-links" id="navLinks">
+<li><a onclick="scrollToSection('home')">Home</a></li>
+<li><a onclick="scrollToSection('shop')">Shop</a></li>
+<li><a onclick="scrollToSection('categories')">Categories</a></li>
+<li><a onclick="openWishlist()">Wishlist</a></li>
+<li><a onclick="openCart()">Cart</a></li>
+<li><a onclick="scrollToSection('contact')">Contact</a></li>
+</ul>
+
+<div class="nav-icons">
+
+<button class="icon-btn menu-btn" onclick="toggleMenu()">☰</button>
+
+<button class="icon-btn" onclick="openWishlist()">
+♥
+<span class="badge" id="wishCount">0</span>
+</button>
+
+<button class="icon-btn" onclick="openCart()">
+🛒
+<span class="badge" id="cartCount">0</span>
+</button>
+
+</div>
+
+</nav>
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+<div class="hero-content">
+
+<h1>UPGRADE <span>YOUR RIDE</span></h1>
+
+<p>
+Premium bike accessories designed for riders who want better style,
+better protection and better performance.
+</p>
+
+<div class="hero-buttons">
+<button class="btn btn-red" onclick="scrollToSection('shop')">
+SHOP NOW
+</button>
+
+<button class="btn btn-light" onclick="scrollToSection('categories')">
+EXPLORE ACCESSORIES
+</button>
+</div>
+
+</div>
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="section" id="categories">
+
+<h2 class="section-title">Shop By Category</h2>
+
+<p class="section-subtitle">
+Find the right accessories for your motorcycle
+</p>
+
+<div class="categories">
+
+<div class="category" onclick="filterCategory('Lighting')">
+<div class="emoji">💡</div>
+<h3>Lighting</h3>
+</div>
+
+<div class="category" onclick="filterCategory('Protection')">
+<div class="emoji">🛡️</div>
+<h3>Protection</h3>
+</div>
+
+<div class="category" onclick="filterCategory('Riding Gear')">
+<div class="emoji">🏍️</div>
+<h3>Riding Gear</h3>
+</div>
+
+<div class="category" onclick="filterCategory('Styling')">
+<div class="emoji">✨</div>
+<h3>Bike Styling</h3>
+</div>
+
+<div class="category" onclick="filterCategory('Security')">
+<div class="emoji">🔐</div>
+<h3>Security</h3>
+</div>
+
+<div class="category" onclick="filterCategory('Maintenance')">
+<div class="emoji">🔧</div>
+<h3>Maintenance</h3>
+</div>
+
+<div class="category" onclick="filterCategory('Electronics')">
+<div class="emoji">⚡</div>
+<h3>Electronics</h3>
+</div>
+
+<div class="category" onclick="filterCategory('Bags')">
+<div class="emoji">🎒</div>
+<h3>Bags & Storage</h3>
+</div>
+
+</div>
+</section>
+
+<!-- ================= SHOP ================= -->
+
+<section class="section" id="shop">
+
+<h2 class="section-title">Bike Accessories</h2>
+
+<p class="section-subtitle">
+Premium accessories for every type of rider
+</p>
+
+<div class="shop-controls">
+
+<div class="search-box">
+<input
+type="text"
+id="search"
+placeholder="Search bike accessories..."
+oninput="renderProducts()">
+</div>
+
+<select id="categoryFilter" onchange="renderProducts()">
+<option value="all">All Categories</option>
+<option>Lighting</option>
+<option>Protection</option>
+<option>Riding Gear</option>
+<option>Styling</option>
+<option>Security</option>
+<option>Maintenance</option>
+<option>Electronics</option>
+<option>Bags</option>
+</select>
+
+<select id="ratingFilter" onchange="renderProducts()">
+<option value="all">All Ratings</option>
+<option value="4">4★ & above</option>
+<option value="4.5">4.5★ & above</option>
+</select>
+
+<select id="sortFilter" onchange="renderProducts()">
+<option value="default">Sort Products</option>
+<option value="low">Price: Low to High</option>
+<option value="high">Price: High to Low</option>
+<option value="rating">Highest Rated</option>
+</select>
+
+<button class="btn btn-dark" onclick="clearFilters()">
+Clear
+</button>
+
+</div>
+
+<div class="products" id="products"></div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section" id="contact">
+
+<h2 class="section-title">Contact DN CUSTOMZ</h2>
+
+<p class="section-subtitle">
+Have questions? Get in touch with us.
+</p>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h2>DN <span>CUSTOMZ</span></h2>
+
+<div class="contact-detail">
+<span>📞 Contact:</span><br>
+7022596739
+</div>
+
+<div class="contact-detail">
+<span>📸 Instagram:</span><br>
+_*dncustomz_*
+</div>
+
+<button
+class="btn btn-red"
+onclick="window.location.href='tel:7022596739'">
+📞 Call Now
+</button>
+
+<a
+href="https://www.instagram.com/"
+target="_blank"
+class="btn btn-light"
+style="display:inline-block;margin-left:5px;text-decoration:none;">
+Instagram
+</a>
+
+</div>
+
+<div class="contact-form">
+
+<h2>Send Message</h2>
+
+<input id="contactName" placeholder="Your Name">
+
+<input id="contactEmail" type="email" placeholder="Email">
+
+<input id="contactPhone" placeholder="Phone Number">
+
+<textarea id="contactMessage" placeholder="Your Message"></textarea>
+
+<button class="btn btn-red" onclick="sendMessage()">
+Send Message
+</button>
+
+</div>
+
+</div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h2>DN <span>CUSTOMZ</span></h2>
+<p>
+Premium motorcycle accessories for style,
+protection and performance.
+</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<ul>
+<li><a onclick="scrollToSection('home')">Home</a></li>
+<li><a onclick="scrollToSection('shop')">Shop</a></li>
+<li><a onclick="scrollToSection('categories')">Categories</a></li>
+<li><a onclick="openCart()">Cart</a></li>
+</ul>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>📞 7022596739</p>
+<p>📸 _*dncustomz_*</p>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 DN CUSTOMZ. All Rights Reserved.
+</div>
+
+</footer>
+
+<!-- ================= CART PANEL ================= -->
+
+<div class="cart-panel" id="cartPanel">
+
+<div class="cart-header">
+<h2>Shopping Cart</h2>
+<button class="close" onclick="closeCart()">×</button>
+</div>
+
+<div class="cart-items" id="cartItems"></div>
+
+<div class="cart-footer">
+
+<div class="total-row">
+<span>Subtotal</span>
+<strong id="subtotal">₹0</strong>
+</div>
+
+<div class="total-row">
+<span>Delivery</span>
+<strong id="delivery">₹0</strong>
+</div>
+
+<div class="total-row grand-total">
+<span>Total</span>
+<strong id="grandTotal">₹0</strong>
+</div>
+
+<button
+class="btn btn-red full-btn"
+onclick="checkout()">
+Proceed to Checkout
+</button>
+
+<button
+class="btn btn-dark full-btn"
+onclick="clearCart()">
+Clear Cart
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= PRODUCT MODAL ================= -->
+
+<div class="modal" id="productModal">
+
+<div class="modal-box">
+
+<button class="modal-close" onclick="closeProduct()">×</button>
+
+<div class="details-grid">
+
+<img id="detailImage">
+
+<div class="details-info">
+
+<div class="category-name" id="detailCategory"></div>
+
+<h2 id="detailName"></h2>
+
+<div class="rating" id="detailRating"></div>
+
+<h3 id="detailPrice"></h3>
+
+<p id="detailDescription"></p>
+
+<ul class="specs">
+<li>✓ Premium quality material</li>
+<li>✓ Easy installation</li>
+<li>✓ Designed for Indian bikes</li>
+<li>✓ Durable and stylish</li>
+</ul>
+
+<div style="display:flex;gap:10px;align-items:center;margin:15px 0;">
+<button class="btn btn-dark" onclick="changeDetailQty(-1)">−</button>
+<strong id="detailQty">1</strong>
+<button class="btn btn-dark" onclick="changeDetailQty(1)">+</button>
+</div>
+
+<button class="btn btn-dark" id="detailAdd">
+Add to Cart
+</button>
+
+<button class="btn btn-red" id="detailBuy">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+<div class="review-box">
+
+<h3>Rate This Product</h3>
+
+<div class="stars" id="stars">
+<span class="star" data-star="1">★</span>
+<span class="star" data-star="2">★</span>
+<span class="star" data-star="3">★</span>
+<span class="star" data-star="4">★</span>
+<span class="star" data-star="5">★</span>
+</div>
+
+<textarea id="reviewText" placeholder="Write your review..."></textarea>
+
+<button
+class="btn btn-red"
+style="margin-top:10px"
+onclick="submitReview()">
+Submit Review
+</button>
+
+<div class="reviews-list" id="reviewsList"></div>
+
+</div>
+
+</div>
+</div>
+
+<!-- ================= CHECKOUT ================= -->
+
+<div class="checkout" id="checkout">
+
+<div class="checkout-box">
+
+<button
+class="btn btn-dark"
+style="float:right"
+onclick="closeCheckout()">
+×
+</button>
+
+<div id="checkoutContent">
+
+<h2 style="margin-bottom:20px;">Checkout</h2>
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Name *</label>
+<input id="customerName">
+</div>
+
+<div class="form-group">
+<label>Mobile *</label>
+<input id="customerMobile">
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input id="customerEmail">
+</div>
+
+<div class="form-group">
+<label>Pincode *</label>
+<input id="customerPincode">
+</div>
+
+<div class="form-group full">
+<label>Address *</label>
+<textarea id="customerAddress" rows="3"></textarea>
+</div>
+
+<div class="form-group">
+<label>City *</label>
+<input id="customerCity">
+</div>
+
+<div class="form-group">
+<label>State *</label>
+<input id="customerState">
+</div>
+
+</div>
+
+<h3>Payment Method</h3>
+
+<div class="payment">
+
+<label>
+<input type="radio" name="payment" value="Cash on Delivery" checked>
+Cash on Delivery
+</label>
+
+<label>
+<input type="radio" name="payment" value="UPI">
+UPI
+</label>
+
+<label>
+<input type="radio" name="payment" value="Card">
+Card
+</label>
+
+</div>
+
+<div style="background:#f5f5f5;padding:15px;border-radius:8px;margin-bottom:15px;">
+<strong>Total Amount: </strong>
+<span id="checkoutTotal">₹0</span>
+</div>
+
+<button
+class="btn btn-red full-btn"
+onclick="placeOrder()">
+Place Order
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast"></div>
+
+<script>
+
+/* =========================================================
+   PRODUCT DATABASE
+========================================================= */
+
+const products = [
+
+{
+id:1,
+name:"Bikexneo-power-beam-pro",
+category:"Lighting",
+price:1499,
+oldPrice:1999,
+rating:4.8,
+reviews:245,
+image:"https://eauto.co.in/cdn/shop/files/bikexneo-power-beam-pro-48w-motorcycle-led-headlight-bulb-indias-most-powerful-1-year-warranty-universal-h4-fit-waterproof-954_1200x.png?v=1770232571",
+description:"High brightness LED headlight designed for better night visibility."
+},
+
+{
+id:2,
+name:"LED Indicator Set",
+category:"Lighting",
+price:799,
+oldPrice:1099,
+rating:4.6,
+reviews:180,
+image:"https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80",
+description:"Stylish LED indicators with bright and quick response lighting."
+},
+
+{
+id:3,
+name:"Auxiliary Fog Lights",
+category:"Lighting",
+price:1299,
+oldPrice:1699,
+rating:4.7,
+reviews:160,
+image:"https://m.media-amazon.com/images/I/61COyvZzluL._AC_UF1000,1000_QL80_.jpg",
+description:"Powerful auxiliary lights for better visibility during night rides."
+},
+
+{
+id:4,
+name:"Bike Crash Guard",
+category:"Protection",
+price:1899,
+oldPrice:2499,
+rating:4.8,
+reviews:310,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdXFveOULjrLW8kJeuSL3wTqvyy9CjNotl6mnoXBIU5A&s=10",
+description:"Heavy-duty crash guard for additional motorcycle protection."
+},
+
+{
+id:5,
+name:"Tank Pad",
+category:"Styling",
+price:399,
+oldPrice:599,
+rating:4.5,
+reviews:122,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAvNRnClhOQZtNNRtsKDC4h71xstf9etIJYCTNgHB4kw&s=10",
+description:"Premium tank pad for protection and sporty styling."
+},
+
+{
+id:6,
+name:"Mobile Phone Holder",
+category:"Electronics",
+price:599,
+oldPrice:899,
+rating:4.7,
+reviews:340,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlR5OL03AdpOSEzyb3v9Si2OzSv-VZ8Sskd0r2HZVG5Q&s=10",
+description:"Strong motorcycle phone holder with secure locking mechanism."
+},
+
+{
+id:7,
+name:"Riding Gloves",
+category:"Riding Gear",
+price:899,
+oldPrice:1199,
+rating:4.6,
+reviews:195,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHS5zul8HVjiRotSSo3VFKxywhk9RasT-fyxs7HU6VRA&s=10",
+description:"Comfortable protective riding gloves with strong grip."
+},
+
+{
+id:8,
+name:"Full Face Helmet",
+category:"Riding Gear",
+price:2499,
+oldPrice:3299,
+rating:4.9,
+reviews:520,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Z7q_R02sEDm2vCYBCbO_p7wIg4tuiUt8lY-iyk9dBQ&s=10",
+description:"Stylish full-face riding helmet with comfortable interior."
+},
+
+{
+id:9,
+name:"Bike Cover Premium",
+category:"Protection",
+price:799,
+oldPrice:1099,
+rating:4.5,
+reviews:210,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsBpShFIba423Vk-8JVI7LVy2NirVI1N61ovrRDFyMJQ&s=10",
+description:"Water-resistant bike cover suitable for outdoor protection."
+},
+
+{
+id:10,
+name:"Handlebar Grips",
+category:"Styling",
+price:349,
+oldPrice:499,
+rating:4.4,
+reviews:95,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnAQKv55Xu_dBLPG6TwKYCxX235Y_jOafstjAWhnT4iA&s=10",
+description:"Comfortable anti-slip handlebar grips."
+},
+
+{
+id:11,
+name:"Bar End Weights",
+category:"Styling",
+price:499,
+oldPrice:699,
+rating:4.5,
+reviews:87,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBntPSEiqbeWuvy_qub-YGvqMUwvwf--cBqUIqqrYeU2WBIl6msRjTF8pn&s=10",
+description:"Premium metal bar end weights for improved styling."
+},
+
+{
+id:12,
+name:"Disc Lock",
+category:"Security",
+price:899,
+oldPrice:1199,
+rating:4.8,
+reviews:270,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReNfHv2mNxY0xwga8LIdODN1S7urpnW8Dnsr9oUgYKuQ&s=10",
+description:"Strong anti-theft disc lock for motorcycle security."
+},
+
+{
+id:13,
+name:"USB Bike Charger",
+category:"Electronics",
+price:499,
+oldPrice:699,
+rating:4.5,
+reviews:145,
+image:"https://www.portronics.com/cdn/shop/files/Image4_c5c845f1-7f69-4344-b1e4-bc7333eac944.png?v=1725963669",
+description:"Dual USB motorcycle charger for phones and accessories."
+},
+
+{
+id:14,
+name:"Saddle Bag",
+category:"Bags",
+price:1599,
+oldPrice:1999,
+rating:4.7,
+reviews:170,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyZNDgszKWgmaQKlJYZYG_cMgfFSV6TPsyhrV559XC_g&s=10",
+description:"Large capacity saddle bag for touring and long rides."
+},
+
+{
+id:15,
+name:"Tank Bag",
+category:"Bags",
+price:999,
+oldPrice:1399,
+rating:4.6,
+reviews:134,
+image:"https://m.media-amazon.com/images/I/71-RO9ni5QL._AC_UF350,350_QL80_.jpg",
+description:"Compact magnetic tank bag for everyday riding."
+},
+
+{
+id:16,
+name:"Chain Cleaning Kit",
+category:"Maintenance",
+price:699,
+oldPrice:999,
+rating:4.8,
+reviews:205,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzRgyf6XCwRPhZ_AR3PO3YxSqOkkCuZYGe75mnurwyDZfBXd9hcbCPeMkT&s=10",
+description:"Complete chain cleaning kit for motorcycle maintenance."
+},
+
+{
+id:17,
+name:"Chain Lubricant",
+category:"Maintenance",
+price:399,
+oldPrice:549,
+rating:4.7,
+reviews:190,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBvzbRbtA2j3QkH0G70AfShHHXev-aY1jMF6v4A9EEkQ&s=10",
+description:"High performance chain lubricant for smooth operation."
+},
+
+{
+id:18,
+name:"Bike Cleaning Kit",
+category:"Maintenance",
+price:599,
+oldPrice:799,
+rating:4.6,
+reviews:155,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx19WPDvYHmKNFuXn1sN9mLahykKgksQg-3VNrHDKUsEBWpyO-Fg4Tnx4J&s=10",
+description:"Complete motorcycle cleaning kit."
+},
+
+{
+id:19,
+name:"Riding Goggles",
+category:"Riding Gear",
+price:449,
+oldPrice:699,
+rating:4.5,
+reviews:112,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLTt5stuqcW6B6P2Vawyau4wiSRCYX5aEmhGXZdh-A5vhTbVXNr_jc15c&s=10",
+description:"Stylish riding goggles with UV protection."
+},
+
+{
+id:20,
+name:"Knee Guards",
+category:"Riding Gear",
+price:999,
+oldPrice:1299,
+rating:4.7,
+reviews:143,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-QfIhvTZcMlk5VCkJbFJyHNMNJI5jXu3cRlrH_Y6UThjhmD_L8SJV5Fs&s=10",
+description:"Protective knee guards for safer motorcycle rides."
+},
+
+{
+id:21,
+name:"Elbow Guards",
+category:"Riding Gear",
+price:799,
+oldPrice:999,
+rating:4.6,
+reviews:104,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx6Mjr9G80cd3Bu1ehttJqJpLhWNBw5MmzqrRnFF-m8g&s=10",
+description:"Lightweight elbow protection for riders."
+},
+
+{
+id:22,
+name:"Bike Mirror Set",
+category:"Styling",
+price:699,
+oldPrice:999,
+rating:4.5,
+reviews:160,
+image:"https://cdn.moglix.com/p/TwVm387fNWCwJ-xxlarge.jpg",
+description:"Sporty rear-view mirrors with premium finish."
+},
+
+{
+id:23,
+name:"Brake Lever",
+category:"Styling",
+price:599,
+oldPrice:899,
+rating:4.6,
+reviews:132,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPYXTHVPDfS_yN8mSpXxoa_tCGlrZhN_3H07agoUJU9Q&s=10",
+description:"Adjustable aluminium brake lever."
+},
+
+{
+id:24,
+name:"Clutch Lever",
+category:"Styling",
+price:599,
+oldPrice:899,
+rating:4.6,
+reviews:126,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFjPou9jke0o45cDzNxlCRiuVwZYzJQbekadNwIMguaQ&s=10",
+description:"Premium adjustable clutch lever."
+},
+
+{
+id:25,
+name:"Number Plate Frame",
+category:"Styling",
+price:299,
+oldPrice:449,
+rating:4.4,
+reviews:77,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTtb51B01V8NFYJE7QJFtaMfX4vy2oEFtyI_3BkIBRbVXEZGkBon6EAj8&s=10",
+description:"Stylish metal number plate frame."
+},
+
+{
+id:26,
+name:"Bike Key Cover",
+category:"Styling",
+price:249,
+oldPrice:399,
+rating:4.5,
+reviews:91,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPDd_u5yo5el15CLRsOnYTnAV-EjKSjDwR-uG57tLV0a16Y7JN039Nh81Z&s=10",
+description:"Protective and stylish motorcycle key cover."
+},
+
+{
+id:27,
+name:"Reflective Stickers",
+category:"Security",
+price:199,
+oldPrice:299,
+rating:4.3,
+reviews:70,
+image:"https://deodap.in/cdn/shop/files/20328.png?v=1762680266&width=1946",
+description:"Reflective stickers for better night visibility."
+},
+
+{
+id:28,
+name:"Security Lock",
+category:"Security",
+price:799,
+oldPrice:1099,
+rating:4.7,
+reviews:180,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7F4Dmvjw3DZLYaAEuNBCkSnOz4dQqzbq80HavZQEcNOLMm7ZZvzLyols&s=10",
+description:"Heavy-duty motorcycle security lock."
+},
+
+{
+id:29,
+name:"Windshield",
+category:"Protection",
+price:1799,
+oldPrice:2299,
+rating:4.6,
+reviews:112,
+image:"https://carbonracing.in/cdn/shop/files/WS5_1000x.jpg?v=1683731780",
+description:"Aerodynamic windshield for improved wind protection."
+},
+
+{
+id:30,
+name:"Riding Jacket",
+category:"Riding Gear",
+price:2999,
+oldPrice:3999,
+rating:4.9,
+reviews:340,
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa_4axA9ZI5BcrBnXTbiQdhwZKcNUsxWKlkbVoWDAf9g&s=10",
+description:"Premium motorcycle riding jacket with protective padding."
+}
+
+];
+
+
+/* =========================================================
+   LOCAL STORAGE
+========================================================= */
+
+let cart = JSON.parse(localStorage.getItem("dn_cart")) || [];
+let wishlist = JSON.parse(localStorage.getItem("dn_wishlist")) || [];
+let reviews = JSON.parse(localStorage.getItem("dn_reviews")) || {};
+
+let currentProduct = null;
+let detailQuantity = 1;
+let selectedRating = 0;
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+document.addEventListener("DOMContentLoaded",()=>{
+    renderProducts();
+    updateCart();
+    updateWishlist();
+});
+
+
+/* =========================================================
+   PRODUCT DISPLAY
+========================================================= */
+
+function renderProducts(){
+
+    const container=document.getElementById("products");
+
+    const search=document.getElementById("search").value.toLowerCase();
+
+    const category=document.getElementById("categoryFilter").value;
+
+    const rating=document.getElementById("ratingFilter").value;
+
+    const sort=document.getElementById("sortFilter").value;
+
+    let list=products.filter(p=>{
+
+        const matchSearch=p.name.toLowerCase().includes(search);
+
+        const matchCategory=
+        category==="all" || p.category===category;
+
+        const matchRating=
+        rating==="all" || p.rating>=Number(rating);
+
+        return matchSearch && matchCategory && matchRating;
+    });
+
+    if(sort==="low"){
+        list.sort((a,b)=>a.price-b.price);
+    }
+
+    if(sort==="high"){
+        list.sort((a,b)=>b.price-a.price);
+    }
+
+    if(sort==="rating"){
+        list.sort((a,b)=>b.rating-a.rating);
+    }
+
+    if(list.length===0){
+
+        container.innerHTML=`
+        <div style="grid-column:1/-1;text-align:center;padding:50px;">
+        <h2>No products found</h2>
+        <p>Try another search or category.</p>
+        </div>
+        `;
+
+        return;
+    }
+
+    container.innerHTML=list.map(p=>{
+
+        const liked=wishlist.includes(p.id);
+
+        const discount=Math.round(
+            ((p.oldPrice-p.price)/p.oldPrice)*100
+        );
+
+        return`
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img
+                src="${p.image}"
+                alt="${p.name}"
+                loading="lazy">
+
+                <button
+                class="wishlist ${liked?'active':''}"
+                onclick="toggleWishlist(${p.id})">
+                ${liked?'♥':'♡'}
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="category-name">
+                ${p.category}
+                </div>
+
+                <h3>${p.name}</h3>
+
+                <div class="rating">
+                ${stars(p.rating)}
+                ${p.rating}
+                (${p.reviews})
+                </div>
+
+                <div class="price">
+                ₹${p.price.toLocaleString('en-IN')}
+
+                <span class="old-price">
+                ₹${p.oldPrice.toLocaleString('en-IN')}
+                </span>
+
+                <span class="discount">
+                ${discount}% OFF
+                </span>
+
+                </div>
+
+                <div class="product-actions">
+
+                    <button
+                    class="add-cart"
+                    onclick="addToCart(${p.id})">
+                    🛒 Add Cart
+                    </button>
+
+                    <button
+                    class="buy-now"
+                    onclick="buyNow(${p.id})">
+                    Buy Now
+                    </button>
+
+                    <button
+                    class="details-btn"
+                    onclick="openProduct(${p.id})">
+                    View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        `;
+    }).join("");
+}
+
+
+/* =========================================================
+   STAR DISPLAY
+========================================================= */
+
+function stars(rating){
+
+    let result="";
+
+    for(let i=1;i<=5;i++){
+
+        result += i<=Math.round(rating) ? "★" : "☆";
+
+    }
+
+    return result;
+}
+
+
+/* =========================================================
+   CART
+========================================================= */
+
+function addToCart(id,quantity=1){
+
+    const product=products.find(p=>p.id===id);
+
+    if(!product)return;
+
+    const existing=cart.find(item=>item.id===id);
+
+    if(existing){
+
+        existing.quantity+=quantity;
+
+    }else{
+
+        cart.push({
+            id:id,
+            quantity:quantity
+        });
+
+    }
+
+    saveCart();
+
+    updateCart();
+
+    showToast("Added to Cart!");
+
+}
+
+
+function updateCart(){
+
+    localStorage.setItem("dn_cart",JSON.stringify(cart));
+
+    const container=document.getElementById("cartItems");
+
+    let total=0;
+    let count=0;
+
+    if(cart.length===0){
+
+        container.innerHTML=`
+        <div style="text-align:center;padding:50px 10px;">
+        <div style="font-size:50px;">🛒</div>
+        <h3>Your cart is empty</h3>
+        <button
+        class="btn btn-red"
+        onclick="closeCart();scrollToSection('shop')">
+        Shop Now
+        </button>
+        </div>
+        `;
+
+    }else{
+
+        container.innerHTML=cart.map(item=>{
+
+            const p=products.find(x=>x.id===item.id);
+
+            if(!p)return "";
+
+            const itemTotal=p.price*item.quantity;
+
+            total+=itemTotal;
+            count+=item.quantity;
+
+            return`
+
+            <div class="cart-item">
+
+                <img src="${p.image}">
+
+                <div class="cart-item-info">
+
+                    <h4>${p.name}</h4>
+
+                    <strong>
+                    ₹${p.price.toLocaleString('en-IN')}
+                    </strong>
+
+                    <div class="quantity">
+
+                        <button
+                        onclick="changeQuantity(${p.id},-1)">
+                        −
+                        </button>
+
+                        <strong>${item.quantity}</strong>
+
+                        <button
+                        onclick="changeQuantity(${p.id},1)">
+                        +
+                        </button>
+
+                        <button
+                        class="remove"
+                        onclick="removeFromCart(${p.id})">
+                        Remove
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            `;
+
+        }).join("");
+    }
+
+    const delivery=total>0 ? 60 : 0;
+
+    document.getElementById("subtotal").textContent=
+    "₹"+total.toLocaleString('en-IN');
+
+    document.getElementById("delivery").textContent=
+    "₹"+delivery;
+
+    document.getElementById("grandTotal").textContent=
+    "₹"+(total+delivery).toLocaleString('en-IN');
+
+    document.getElementById("cartCount").textContent=count;
+}
+
+
+function saveCart(){
+
+    localStorage.setItem("dn_cart",JSON.stringify(cart));
+
+}
+
+
+function changeQuantity(id,change){
+
+    const item=cart.find(x=>x.id===id);
+
+    if(!item)return;
+
+    item.quantity+=change;
+
+    if(item.quantity<=0){
+
+        cart=cart.filter(x=>x.id!==id);
+
+    }
+
+    saveCart();
+
+    updateCart();
+
+}
+
+
+function removeFromCart(id){
+
+    cart=cart.filter(x=>x.id!==id);
+
+    saveCart();
+
+    updateCart();
+
+    showToast("Removed from Cart");
+
+}
+
+
+function clearCart(){
+
+    if(cart.length===0)return;
+
+    if(confirm("Clear your entire cart?")){
+
+        cart=[];
+
+        saveCart();
+
+        updateCart();
+
+        showToast("Cart Cleared");
+
+    }
+
+}
+
+
+function openCart(){
+
+    document.getElementById("cartPanel").classList.add("open");
+
+    updateCart();
+
+}
+
+
+function closeCart(){
+
+    document.getElementById("cartPanel").classList.remove("open");
+
+}
+
+
+/* =========================================================
+   BUY NOW
+========================================================= */
+
+function buyNow(id){
+
+    cart=[];
+
+    addToCart(id,1);
+
+    closeProduct();
+
+    openCart();
+
+    setTimeout(()=>{
+        checkout();
+    },300);
+
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+========================================================= */
+
+function openProduct(id){
+
+    const p=products.find(x=>x.id===id);
+
+    if(!p)return;
+
+    currentProduct=p;
+
+    detailQuantity=1;
+
+    selectedRating=0;
+
+    document.getElementById("detailImage").src=p.image;
+
+    document.getElementById("detailCategory").textContent=p.category;
+
+    document.getElementById("detailName").textContent=p.name;
+
+    document.getElementById("detailRating").innerHTML=
+    stars(p.rating)+" "+p.rating+" ("+p.reviews+" reviews)";
+
+    document.getElementById("detailPrice").textContent=
+    "₹"+p.price.toLocaleString('en-IN');
+
+    document.getElementById("detailDescription").textContent=
+    p.description;
+
+    document.getElementById("detailQty").textContent=1;
+
+    document.getElementById("productModal").classList.add("show");
+
+    document.getElementById("detailAdd").onclick=()=>{
+        addToCart(p.id,detailQuantity);
+    };
+
+    document.getElementById("detailBuy").onclick=()=>{
+        buyNowQuantity(p.id,detailQuantity);
+    };
+
+    setupStars();
+
+    loadReviews(p.id);
+}
+
+
+function closeProduct(){
+
+    document.getElementById("productModal").classList.remove("show");
+
+}
+
+
+function changeDetailQty(change){
+
+    detailQuantity+=change;
+
+    if(detailQuantity<1){
+        detailQuantity=1;
+    }
+
+    document.getElementById("detailQty").textContent=
+    detailQuantity;
+
+}
+
+
+function buyNowQuantity(id,quantity){
+
+    cart=[];
+
+    addToCart(id,quantity);
+
+    closeProduct();
+
+    openCart();
+
+    setTimeout(()=>{
+        checkout();
+    },300);
+
+}
+
+
+/* =========================================================
+   REVIEWS
+========================================================= */
+
+function setupStars(){
+
+    const starsElements=document.querySelectorAll(".star");
+
+    starsElements.forEach(star=>{
+
+        star.classList.remove("selected");
+
+        star.onclick=()=>{
+
+            selectedRating=
+            Number(star.dataset.star);
+
+            starsElements.forEach(s=>{
+
+                s.classList.toggle(
+                    "selected",
+                    Number(s.dataset.star)<=selectedRating
+                );
+
+            });
+
+        };
+
+    });
+
+}
+
+
+function submitReview(){
+
+    if(!currentProduct)return;
+
+    const text=document.getElementById("reviewText").value.trim();
+
+    if(selectedRating===0){
+
+        showToast("Please select a rating");
+
+        return;
+    }
+
+    if(!text){
+
+        showToast("Please write a review");
+
+        return;
+    }
+
+    if(!reviews[currentProduct.id]){
+        reviews[currentProduct.id]=[];
+    }
+
+    reviews[currentProduct.id].push({
+        rating:selectedRating,
+        text:text,
+        date:new Date().toLocaleDateString()
+    });
+
+    localStorage.setItem(
+        "dn_reviews",
+        JSON.stringify(reviews)
+    );
+
+    document.getElementById("reviewText").value="";
+
+    selectedRating=0;
+
+    setupStars();
+
+    loadReviews(currentProduct.id);
+
+    showToast("Review Submitted!");
+
+}
+
+
+function loadReviews(id){
+
+    const list=document.getElementById("reviewsList");
+
+    const data=reviews[id] || [];
+
+    if(data.length===0){
+
+        list.innerHTML=
+        "<p style='color:#777;margin-top:10px;'>No customer reviews yet.</p>";
+
+        return;
+    }
+
+    list.innerHTML=data.map(r=>`
+
+        <div class="review">
+
+        <div class="rating">
+        ${stars(r.rating)}
+        </div>
+
+        <p>${escapeHtml(r.text)}</p>
+
+        <small>${r.date}</small>
+
+        </div>
+
+    `).join("");
+
+}
+
+
+/* =========================================================
+   WISHLIST
+========================================================= */
+
+function toggleWishlist(id){
+
+    if(wishlist.includes(id)){
+
+        wishlist=wishlist.filter(x=>x!==id);
+
+        showToast("Removed from Wishlist");
+
+    }else{
+
+        wishlist.push(id);
+
+        showToast("Added to Wishlist");
+
+    }
+
+    localStorage.setItem(
+        "dn_wishlist",
+        JSON.stringify(wishlist)
+    );
+
+    updateWishlist();
+
+    renderProducts();
+
+}
+
+
+function updateWishlist(){
+
+    document.getElementById("wishCount").textContent=
+    wishlist.length;
+
+}
+
+
+function openWishlist(){
+
+    const items=products.filter(
+        p=>wishlist.includes(p.id)
+    );
+
+    if(items.length===0){
+
+        alert("Your wishlist is empty.");
+
+        return;
+
+    }
+
+    const names=items.map(
+        p=>p.name
+    ).join("\n");
+
+    alert("YOUR WISHLIST\n\n"+names);
+
+}
+
+
+/* =========================================================
+   CHECKOUT
+========================================================= */
+
+function checkout(){
+
+    if(cart.length===0){
+
+        showToast("Your cart is empty");
+
+        return;
+
+    }
+
+    closeCart();
+
+    let total=cart.reduce((sum,item)=>{
+
+        const p=products.find(x=>x.id===item.id);
+
+        return sum+(p.price*item.quantity);
+
+    },0);
+
+    total+=60;
+
+    document.getElementById("checkoutTotal").textContent=
+    "₹"+total.toLocaleString('en-IN');
+
+    document.getElementById("checkout").classList.add("show");
+
+}
+
+
+function closeCheckout(){
+
+    document.getElementById("checkout").classList.remove("show");
+
+}
+
+
+function placeOrder(){
+
+    const name=document.getElementById("customerName").value.trim();
+
+    const mobile=document.getElementById("customerMobile").value.trim();
+
+    const address=document.getElementById("customerAddress").value.trim();
+
+    const city=document.getElementById("customerCity").value.trim();
+
+    const state=document.getElementById("customerState").value.trim();
+
+    const pincode=document.getElementById("customerPincode").value.trim();
+
+    if(!name || !mobile || !address || !city || !state || !pincode){
+
+        alert("Please fill all required fields.");
+
+        return;
+
+    }
+
+    if(mobile.length<10){
+
+        alert("Please enter a valid mobile number.");
+
+        return;
+
+    }
+
+    const payment=
+    document.querySelector(
+        'input[name="payment"]:checked'
+    ).value;
+
+    let total=cart.reduce((sum,item)=>{
+
+        const p=products.find(x=>x.id===item.id);
+
+        return sum+(p.price*item.quantity);
+
+    },0);
+
+    total+=60;
+
+    const orderId=
+    "DN"+Date.now().toString().slice(-8);
+
+    const order={
+
+        id:orderId,
+
+        name:name,
+
+        mobile:mobile,
+
+        address:address,
+
+        city:city,
+
+        state:state,
+
+        pincode:pincode,
+
+        payment:payment,
+
+        total:total,
+
+        date:new Date().toLocaleString()
+
+    };
+
+    let orders=
+    JSON.parse(localStorage.getItem("dn_orders")) || [];
+
+    orders.push(order);
+
+    localStorage.setItem(
+        "dn_orders",
+        JSON.stringify(orders)
+    );
+
+    document.getElementById("checkoutContent").innerHTML=`
+
+        <div class="success">
+
+            <div class="success-icon">✅</div>
+
+            <h2>Order Placed Successfully!</h2>
+
+            <p style="margin:15px 0;">
+            Thank you for shopping with DN CUSTOMZ.
+            </p>
+
+            <div style="
+            background:#f5f5f5;
+            padding:20px;
+            border-radius:10px;
+            text-align:left;
+            line-height:2;">
+
+            <strong>Order ID:</strong> ${orderId}<br>
+
+            <strong>Name:</strong> ${name}<br>
+
+            <strong>Total:</strong>
+            ₹${total.toLocaleString('en-IN')}<br>
+
+            <strong>Payment:</strong> ${payment}<br>
+
+            <strong>Delivery:</strong>
+            ${address}, ${city}, ${state} - ${pincode}
+
+            </div>
+
+            <button
+            class="btn btn-red"
+            style="margin-top:20px"
+            onclick="finishOrder()">
+            Continue Shopping
+            </button>
+
+        </div>
+    `;
+
+    cart=[];
+
+    saveCart();
+
+    updateCart();
+
+}
+
+
+function finishOrder(){
+
+    document.getElementById("checkout").classList.remove("show");
+
+    location.reload();
+
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+function filterCategory(category){
+
+    document.getElementById("categoryFilter").value=
+    category;
+
+    scrollToSection("shop");
+
+    renderProducts();
+
+}
+
+
+function clearFilters(){
+
+    document.getElementById("search").value="";
+
+    document.getElementById("categoryFilter").value="all";
+
+    document.getElementById("ratingFilter").value="all";
+
+    document.getElementById("sortFilter").value="default";
+
+    renderProducts();
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+function sendMessage(){
+
+    const name=
+    document.getElementById("contactName").value.trim();
+
+    const email=
+    document.getElementById("contactEmail").value.trim();
+
+    const message=
+    document.getElementById("contactMessage").value.trim();
+
+    if(!name || !email || !message){
+
+        alert("Please fill Name, Email and Message.");
+
+        return;
+
+    }
+
+    document.getElementById("contactName").value="";
+
+    document.getElementById("contactEmail").value="";
+
+    document.getElementById("contactPhone").value="";
+
+    document.getElementById("contactMessage").value="";
+
+    showToast("Message sent successfully!");
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+function scrollToSection(id){
+
+    document.getElementById(id)
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+    document.getElementById("navLinks")
+    .classList.remove("show");
+
+}
+
+
+function toggleMenu(){
+
+    document.getElementById("navLinks")
+    .classList.toggle("show");
+
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+function showToast(message){
+
+    const toast=document.getElementById("toast");
+
+    toast.textContent=message;
+
+    toast.classList.add("show");
+
+    setTimeout(()=>{
+
+        toast.classList.remove("show");
+
+    },2200);
+
+}
+
+
+/* =========================================================
+   SECURITY / TEXT
+========================================================= */
+
+function escapeHtml(text){
+
+    const div=document.createElement("div");
+
+    div.textContent=text;
+
+    return div.innerHTML;
+
+}
+
+</script>
+
+</body>
+</html>
